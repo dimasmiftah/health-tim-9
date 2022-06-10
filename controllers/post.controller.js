@@ -3,7 +3,7 @@ const Post = require('../models/Post');
 module.exports = {
   index: async (req, res) => {
     const posts = await Post.findAll();
-
+    //menambahkan komentar
     return res.render('post/index', {
       posts
     });
